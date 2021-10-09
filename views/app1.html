@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="ap.css">
+    
+</head>
+<body>
+    <div id="playgame">
+
+        <h1 align="center">Tic Tac Toe Game</h1>
+        <h2 align="center">Turn: Player <span id="player">X</span></h2>
+        <!-- <div style="text-align: center;"><button id="tapconnect" >TAP TO CONNECT</button></div> -->
+        <div style="text-align: center;"><button id="restart" >RESTART</button></div>
+    
+        <table id="game" align="center">
+            <tr>
+                <td id="cliq1"  class="cliq" "></td>
+                <td id="cliq2" class="cliq" "></td>
+                <td id="cliq3" class="cliq" "></td>
+            </tr>
+            <tr>
+                <td id="cliq4" class="cliq" "></td>
+                <td id="cliq5" class="cliq" "></td>
+                <td id="cliq6" class="cliq" "></td>
+            </tr>
+            <tr>
+                <td id="cliq7" class="cliq" "></td>
+                <td id="cliq8" class="cliq" "></td>
+                <td id="cliq9" class="cliq" "></td>
+            </tr>
+        </table>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script   src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script>
+    <script   src="app.js"></script>
+    <script   src="chat_engine.js"></script>    
+    <script>
+        new ChatEngine('playgame');
+    </script>
+</body>
+</html>
